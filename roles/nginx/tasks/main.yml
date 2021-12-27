@@ -4,7 +4,6 @@
       - nginx
     state: present
     update_cache: yes
-    cache_valid_time: 3600
   become: yes
 
 - name: start nginx
@@ -16,5 +15,5 @@
 - name: index
   template:
     src: index.html.j2
-    dest: /usr/share/nginx/index.html
+    dest: /usr/share/nginx/html/index.html
 
