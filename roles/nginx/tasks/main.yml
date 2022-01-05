@@ -16,7 +16,7 @@
 - name: stop firewalld
   service:
     name: firewalld
-    state: stoped
+    state: stopped
   become: yes
 
 - name: index
