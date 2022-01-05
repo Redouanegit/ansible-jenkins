@@ -1,5 +1,4 @@
 - name: install nginx
-  use_backend: yum
   yum:
     name:
       - nginx
