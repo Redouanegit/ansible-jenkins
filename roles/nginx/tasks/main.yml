@@ -12,6 +12,12 @@
     name: nginx
     state: started
   become: yes
+  
+- name: stop firewalld
+  service:
+    name: firewalld
+    state: stoped
+  become: yes
 
 - name: index
   template:
