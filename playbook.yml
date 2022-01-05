@@ -3,6 +3,7 @@
   gather_facts: no
   hosts: all
   become: yes
+  use_backend: yum
   roles:
     - nginx
 
