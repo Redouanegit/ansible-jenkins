@@ -1,5 +1,6 @@
 - name: install nginx
   yum:
+    use_backend: yum
     name:
       - nginx
     state: present
